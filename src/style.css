@@ -4,35 +4,32 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   font-family: Roboto, sans-serif;
+  font-size: 12px;
 }
 
 header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding-inline: 50px;
 }
 
 img {
-  padding-left: 50px;
   padding-top: 10px;
-}
-
-nav {
-  height: 60px;
-  padding-right: 50px;
 }
 
 .nav_list {
   display: flex;
+  text-transform: uppercase;
+  gap: 20px;
 }
 
 .nav_link {
   text-decoration: none;
   color: black;
   display: block;
-  padding: 0 10px;
   line-height: 60px;
 }
 
@@ -40,14 +37,23 @@ ul {
   list-style-type: none;
 }
 
-.is-active:hover::after {
+.is-active::after {
   content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: #00acdc;
   height: 4px;
   display: flex;
   color: #00acdc;
+  border-radius: 8px;
 }
 
-.link:hover {
+.nav_link:hover {
+  color: #00acdc;
+}
+
+.is-active {
+  position: relative;
   color: #00acdc;
 }
