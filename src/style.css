@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  --main-color: #00acdc;
+}
+
 html {
   font-family: Roboto, sans-serif;
   font-size: 12px;
@@ -23,7 +27,7 @@ img {
 .nav_list {
   display: flex;
   text-transform: uppercase;
-  gap: 20px;
+  align-items: center;
 }
 
 .nav_link {
@@ -31,6 +35,8 @@ img {
   color: black;
   display: block;
   line-height: 60px;
+  height: 60px;
+  margin-right: 20px;
 }
 
 ul {
@@ -42,18 +48,17 @@ ul {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #00acdc;
+  background-color: var(--main-color);
   height: 4px;
   display: flex;
-  color: #00acdc;
   border-radius: 8px;
 }
 
 .nav_link:hover {
-  color: #00acdc;
+  color: var(--main-color);
 }
 
 .is-active {
   position: relative;
-  color: #00acdc;
+  color: var(--main-color);
 }
