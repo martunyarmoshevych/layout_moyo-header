@@ -1,7 +1,7 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -36,7 +36,6 @@ img {
   display: block;
   line-height: 60px;
   height: 60px;
-  margin-right: 20px;
 }
 
 ul {
@@ -61,4 +60,8 @@ ul {
 .is-active {
   position: relative;
   color: var(--main-color);
+}
+
+.list {
+  margin-right: 20px;
 }
